@@ -17,6 +17,7 @@
                 <a href="#gallery">معرض الصور</a>
                 <a href="#about">عن المكتبة</a>
                 <a href="#contact">اتصل بنا</a>
+                <a href="#search">البحث عن الكتب المتوفرة</a>
             </div>
         </nav>
     </header>
@@ -34,7 +35,7 @@
         <h2>معرض الصور</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="sale1.jpg" alt="قاعة المطالعة الرئيسية">
+                <img src="sale1.jpg"width="600" height="400" alt="قاعة المطالعة الرئيسية">
                 <div class="gallery-caption">قاعة المطالعة الرئيسية</div>
             </div>
             <div class="gallery-item">
@@ -57,6 +58,9 @@
         </div>
     </section>
 
+
+   
+
     <section class="about" id="about">
         <h2>مرحباً بكم في مكتبة غزة</h2>
         <p>نحن نسعى لتوفير بيئة تعليمية متكاملة تجمع بين الموارد التقليدية والحديثة لتلبية احتياجات جميع زوارنا.</p>
@@ -77,6 +81,87 @@
                 <i class="fas fa-users"></i>
                 <h3>مساحات للدراسة</h3>
                 <p>قاعات دراسية مجهزة بالكامل للدراسة الفردية والجماعية مع أجواء هادئة ومريحة</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <!--search-->
+    <section class="search" id="search">
+        <div class="search-container">
+            <h2 class="search-title">ابحث في مكتبتنا</h2>
+            <div class="search-box">
+                <form class="search-form">
+                    <div class="search-row">
+                        <input type="text" class="search-input" placeholder="عنوان الكتاب، المؤلف...">
+                        <select class="search-select">
+                            <option value="">جميع التصنيفات</option>
+                            <option value="literature">الأدب العربي</option>
+                            <option value="science">العلوم</option>
+                            <option value="history">التاريخ</option>
+                            <option value="religion">الدين</option>
+                            <option value="philosophy">الفلسفة</option>
+                        </select>
+                    </div>
+                    <div class="search-row">
+                        <select class="search-select">
+                            <option value="">نوع المادة</option>
+                            <option value="book">كتاب</option>
+                            <option value="journal">مجلة</option>
+                            <option value="thesis">رسالة علمية</option>
+                            <option value="manuscript">مخطوطة</option>
+                        </select>
+                        <!-- <select class="search-select">
+                            <option value="">حالة التوفر</option>
+                            <option value="available">متوفر</option>
+                            <option value="unavailable">غير متوفر</option>
+                        </select> -->
+                    </div>
+                    <button type="submit" class="search-button">بحث</button>
+                </form>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section class="search-results">
+        <div class="results-grid">
+            <div class="book-card">
+                <img src="https://www.neelwafurat.com/images/lb/abookstore/covers/normal/76/76929.jpg" width="400" height="300" alt="كتاب" class="book-image">
+                <div class="book-details">
+                    <div class="book-category">الأدب العربي</div>
+                    <h3 class="book-title">مدينة الرياح</h3>
+                    <div class="book-author">موسى ولد أبنو</div>
+                    <span class="book-status ">متوفر</span>
+                </div>
+            </div>
+            <div class="book-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1295918136i/10308965.jpg" alt="كتاب" class="book-image">
+                <div class="book-details">
+                    <div class="book-category">التاريخ</div>
+                    <h3 class="book-title">تاريخ الأدب العربي</h3>
+                    <div class="book-author">شوقي ضيف</div>
+                    <span class="book-status status-unavailable">غير متوفر</span>
+                </div>
+            </div>
+            <div class="book-card">
+                <img src="/api/placeholder/400/300" alt="كتاب" class="book-image">
+                <div class="book-details">
+                    <div class="book-category">الفلسفة</div>
+                    <h3 class="book-title">تهافت الفلاسفة</h3>
+                    <div class="book-author">أبو حامد الغزالي</div>
+                    <span class="book-status">متوفر</span>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="/api/placeholder/400/300" alt="كتاب" class="book-image">
+                <div class="book-details">
+                    <div class="book-category">الإرشاد التعليمي</div>
+                    <div>كان إعلان</div>
+                    <h3 class="book-title"></h3>
+                    <div>دليل شامل يحتوي على نصائح عملية وإرشادات نفسية وأكاديمية تساعد طلاب الباكالوريا على التحضير الجيد للامتحانات وتحقيق التفوق.</div>
+                    <div class="book-author">أحمد محمد إسماعيل</div>
+                    <a style="text-decoration: none;" href="TP2.pdf" target="_blank"><span class="book-status">متوفر PDF (يلين ما خلصني&nbsp;)</span></a>
+                </div>
             </div>
         </div>
     </section>
